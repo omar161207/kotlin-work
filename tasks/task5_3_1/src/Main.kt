@@ -5,12 +5,11 @@ import kotlin.system.exitProcess
 fun main(args: Array<String>) {
 
     if (args.size == 0){
-        rollDice()
+        rollDie()
         exitProcess(0)
     }
 
-    val sides = args[0].toInt()
-    val dice = args[1].toInt()
-    rollDice(sides, dice)
+    val die = args[0].toInt()
+    rollDie(die)
 
 }
